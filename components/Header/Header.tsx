@@ -9,12 +9,6 @@ function Header() {
         <Link href="/">
           <a>Home</a>
         </Link>{" "}
-        <Link href="/list-fc">
-          <a>List Example (as Functional Component)</a>
-        </Link>{" "}
-        <Link href="/about">
-          <a>About</a>
-        </Link>{" "}
         <Link href="/login">
           <a>Log In</a>
         </Link>{" "}

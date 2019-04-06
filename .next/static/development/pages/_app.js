@@ -147,7 +147,7 @@ function Header() {
     },
     __self: this
   }, "Home")), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/list-fc",
+    href: "/login",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
@@ -159,8 +159,8 @@ function Header() {
       lineNumber: 13
     },
     __self: this
-  }, "List Example (as Functional Component)")), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/about",
+  }, "Log In")), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/signup",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15
@@ -170,32 +170,6 @@ function Header() {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16
-    },
-    __self: this
-  }, "About")), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/login",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }, "Log In")), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/signup",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22
     },
     __self: this
   }, "Sign Up")), " ", "|", " "));
