@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { colors } from "../Styles/colors";
 import { preventDefault } from "../Common/helpers";
@@ -21,23 +21,42 @@ const SIGNUP_MUTATION = gql`
 `;
 
 function SignUp() {
-  const state = {
-    email: "a",
-    username: "blake",
-    password: "a"
-  };
+  const [email, setEmail] = useState("");
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
   return (
-    <Mutation mutation={SIGNUP_MUTATION} variables={state}>
+    <Mutation
+      mutation={SIGNUP_MUTATION}
+      variables={{ email, username, password }}
+    >
       {(signup, { error, loading, data }) => {
         console.log(data);
 
         return (
           <Form onSubmit={preventDefault(async () => await signup())}>
             <Header>Snippet</Header>
-            <Input placeholder="Email" type="email" name="email" />
-            <Input placeholder="Username" type="text" name="username" />
-            <Input placeholder="Password" type="password" name="password" />
+            <Input
+              onChange={e => setEmail(e.target.value)}
+              value={email}
+              placeholder="Email"
+              type="email"
+              name="email"
+            />
+            <Input
+              onChange={e => setUsername(e.target.value)}
+              value={username}
+              placeholder="Username"
+              type="text"
+              name="username"
+            />
+            <Input
+              onChange={e => setPassword(e.target.value)}
+              value={password}
+              placeholder="Password"
+              type="password"
+              name="password"
+            />
             <Button type="submit">Sign Up</Button>
           </Form>
         );

@@ -12,22 +12,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _Styles_colors__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../Styles/colors */ "./components/Styles/colors.ts");
-/* harmony import */ var _Common_helpers__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../Common/helpers */ "./components/Common/helpers.ts");
-/* harmony import */ var graphql_tag__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! graphql-tag */ "./node_modules/graphql-tag/src/index.js");
-/* harmony import */ var graphql_tag__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(graphql_tag__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var react_apollo__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-apollo */ "./node_modules/react-apollo/react-apollo.esm.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _Styles_colors__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../Styles/colors */ "./components/Styles/colors.ts");
+/* harmony import */ var _Common_helpers__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../Common/helpers */ "./components/Common/helpers.ts");
+/* harmony import */ var graphql_tag__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! graphql-tag */ "./node_modules/graphql-tag/src/index.js");
+/* harmony import */ var graphql_tag__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(graphql_tag__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var react_apollo__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-apollo */ "./node_modules/react-apollo/react-apollo.esm.js");
+
 
 
 
 var _jsxFileName = "C:\\Users\\engqu\\Desktop\\projects\\Personal\\snippet\\components\\Auth\\SignUp.tsx";
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_2__["default"])(["\n  mutation SIGNUP_MUTATION(\n    $email: String!\n    $username: String!\n    $password: String!\n  ) {\n    signup(email: $email, username: $username, password: $password) {\n      id\n      email\n      username\n      password\n    }\n  }\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_3__["default"])(["\n  mutation SIGNUP_MUTATION(\n    $email: String!\n    $username: String!\n    $password: String!\n  ) {\n    signup(email: $email, username: $username, password: $password) {\n      id\n      email\n      username\n      password\n    }\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -42,20 +44,34 @@ function _templateObject() {
 
 
 
-var SIGNUP_MUTATION = graphql_tag__WEBPACK_IMPORTED_MODULE_7___default()(_templateObject());
+var SIGNUP_MUTATION = graphql_tag__WEBPACK_IMPORTED_MODULE_8___default()(_templateObject());
 
 function SignUp() {
-  var state = {
-    email: "a",
-    username: "blake",
-    password: "a"
-  };
-  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_apollo__WEBPACK_IMPORTED_MODULE_8__["Mutation"], {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_4__["useState"])(""),
+      _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__["default"])(_useState, 2),
+      email = _useState2[0],
+      setEmail = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_4__["useState"])(""),
+      _useState4 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__["default"])(_useState3, 2),
+      username = _useState4[0],
+      setUsername = _useState4[1];
+
+  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_4__["useState"])(""),
+      _useState6 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__["default"])(_useState5, 2),
+      password = _useState6[0],
+      setPassword = _useState6[1];
+
+  return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_apollo__WEBPACK_IMPORTED_MODULE_9__["Mutation"], {
     mutation: SIGNUP_MUTATION,
-    variables: state,
+    variables: {
+      email: email,
+      username: username,
+      password: password
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 29
     },
     __self: this
   }, function (signup, _ref) {
@@ -63,8 +79,8 @@ function SignUp() {
         loading = _ref.loading,
         data = _ref.data;
     console.log(data);
-    return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(Form, {
-      onSubmit: Object(_Common_helpers__WEBPACK_IMPORTED_MODULE_6__["preventDefault"])(
+    return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(Form, {
+      onSubmit: Object(_Common_helpers__WEBPACK_IMPORTED_MODULE_7__["preventDefault"])(
       /*#__PURE__*/
       Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
       /*#__PURE__*/
@@ -88,47 +104,59 @@ function SignUp() {
       }))),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 36
-      },
-      __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(Header, {
-      __source: {
-        fileName: _jsxFileName,
         lineNumber: 37
       },
       __self: this
-    }, "Snippet"), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(Input, {
-      placeholder: "Email",
-      type: "email",
-      name: "email",
+    }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(Header, {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 38
       },
       __self: this
-    }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(Input, {
-      placeholder: "Username",
-      type: "text",
-      name: "username",
+    }, "Snippet"), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(Input, {
+      onChange: function onChange(e) {
+        return setEmail(e.target.value);
+      },
+      value: email,
+      placeholder: "Email",
+      type: "email",
+      name: "email",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 39
       },
       __self: this
-    }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(Input, {
+    }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(Input, {
+      onChange: function onChange(e) {
+        return setUsername(e.target.value);
+      },
+      value: username,
+      placeholder: "Username",
+      type: "text",
+      name: "username",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 46
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(Input, {
+      onChange: function onChange(e) {
+        return setPassword(e.target.value);
+      },
+      value: password,
       placeholder: "Password",
       type: "password",
       name: "password",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 40
+        lineNumber: 53
       },
       __self: this
-    }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(Button, {
+    }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(Button, {
       type: "submit",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 41
+        lineNumber: 60
       },
       __self: this
     }, "Sign Up"));
@@ -136,21 +164,21 @@ function SignUp() {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (SignUp);
-var Form = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].form.withConfig({
+var Form = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].form.withConfig({
   displayName: "SignUp__Form",
-  componentId: "sc-14ab4m1-0"
-})(["padding:40px;background:", ";border-radius:10px;width:100%;max-width:500px;display:grid;grid-gap:30px;justify-items:center;"], _Styles_colors__WEBPACK_IMPORTED_MODULE_5__["colors"].green);
-var Header = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].h1.withConfig({
+  componentId: "sc-1qb7gwg-0"
+})(["padding:40px;background:", ";border-radius:10px;width:100%;max-width:500px;display:grid;grid-gap:30px;justify-items:center;"], _Styles_colors__WEBPACK_IMPORTED_MODULE_6__["colors"].green);
+var Header = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].h1.withConfig({
   displayName: "SignUp__Header",
-  componentId: "sc-14ab4m1-1"
-})(["color:", ";text-transform:uppercase;"], _Styles_colors__WEBPACK_IMPORTED_MODULE_5__["colors"].white);
-var Input = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].input.withConfig({
+  componentId: "sc-1qb7gwg-1"
+})(["color:", ";text-transform:uppercase;"], _Styles_colors__WEBPACK_IMPORTED_MODULE_6__["colors"].white);
+var Input = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].input.withConfig({
   displayName: "SignUp__Input",
-  componentId: "sc-14ab4m1-2"
+  componentId: "sc-1qb7gwg-2"
 })(["height:40px;max-width:400px;width:100%;"]);
-var Button = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].button.withConfig({
+var Button = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].button.withConfig({
   displayName: "SignUp__Button",
-  componentId: "sc-14ab4m1-3"
+  componentId: "sc-1qb7gwg-3"
 })(["border-radius:5px;padding:10px 20px;border:none;"]);
 
 /***/ }),
@@ -240,6 +268,28 @@ var flexColumnCenter = Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["cs
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/array/is-array */ "./node_modules/core-js/library/fn/array/is-array.js");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/get-iterator.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/get-iterator.js ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/get-iterator */ "./node_modules/core-js/library/fn/get-iterator.js");
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js":
 /*!*********************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js ***!
@@ -270,6 +320,25 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/freeze */ "./
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/promise */ "./node_modules/core-js/library/fn/promise.js");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/arrayWithHoles.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/arrayWithHoles.js ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _arrayWithHoles; });
+/* harmony import */ var _core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/array/is-array */ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js");
+/* harmony import */ var _core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0__);
+
+function _arrayWithHoles(arr) {
+  if (_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0___default()(arr)) return arr;
+}
 
 /***/ }),
 
@@ -321,6 +390,85 @@ function _asyncToGenerator(fn) {
       _next(undefined);
     });
   };
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/iterableToArrayLimit.js":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/iterableToArrayLimit.js ***!
+  \*********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _iterableToArrayLimit; });
+/* harmony import */ var _core_js_get_iterator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/get-iterator */ "./node_modules/@babel/runtime-corejs2/core-js/get-iterator.js");
+/* harmony import */ var _core_js_get_iterator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_get_iterator__WEBPACK_IMPORTED_MODULE_0__);
+
+function _iterableToArrayLimit(arr, i) {
+  var _arr = [];
+  var _n = true;
+  var _d = false;
+  var _e = undefined;
+
+  try {
+    for (var _i = _core_js_get_iterator__WEBPACK_IMPORTED_MODULE_0___default()(arr), _s; !(_n = (_s = _i.next()).done); _n = true) {
+      _arr.push(_s.value);
+
+      if (i && _arr.length === i) break;
+    }
+  } catch (err) {
+    _d = true;
+    _e = err;
+  } finally {
+    try {
+      if (!_n && _i["return"] != null) _i["return"]();
+    } finally {
+      if (_d) throw _e;
+    }
+  }
+
+  return _arr;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/nonIterableRest.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/nonIterableRest.js ***!
+  \****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _nonIterableRest; });
+function _nonIterableRest() {
+  throw new TypeError("Invalid attempt to destructure non-iterable instance");
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js ***!
+  \**************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _slicedToArray; });
+/* harmony import */ var _arrayWithHoles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./arrayWithHoles */ "./node_modules/@babel/runtime-corejs2/helpers/esm/arrayWithHoles.js");
+/* harmony import */ var _iterableToArrayLimit__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./iterableToArrayLimit */ "./node_modules/@babel/runtime-corejs2/helpers/esm/iterableToArrayLimit.js");
+/* harmony import */ var _nonIterableRest__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./nonIterableRest */ "./node_modules/@babel/runtime-corejs2/helpers/esm/nonIterableRest.js");
+
+
+
+function _slicedToArray(arr, i) {
+  return Object(_arrayWithHoles__WEBPACK_IMPORTED_MODULE_0__["default"])(arr) || Object(_iterableToArrayLimit__WEBPACK_IMPORTED_MODULE_1__["default"])(arr, i) || Object(_nonIterableRest__WEBPACK_IMPORTED_MODULE_2__["default"])();
 }
 
 /***/ }),
@@ -4190,6 +4338,33 @@ function stripSymbols(data) {
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/fn/array/is-array.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/core-js/library/fn/array/is-array.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../../modules/es6.array.is-array */ "./node_modules/core-js/library/modules/es6.array.is-array.js");
+module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Array.isArray;
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/fn/get-iterator.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/core-js/library/fn/get-iterator.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../modules/web.dom.iterable */ "./node_modules/core-js/library/modules/web.dom.iterable.js");
+__webpack_require__(/*! ../modules/es6.string.iterator */ "./node_modules/core-js/library/modules/es6.string.iterator.js");
+module.exports = __webpack_require__(/*! ../modules/core.get-iterator */ "./node_modules/core-js/library/modules/core.get-iterator.js");
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/fn/object/define-properties.js":
 /*!*********************************************************************!*\
   !*** ./node_modules/core-js/library/fn/object/define-properties.js ***!
@@ -4751,6 +4926,22 @@ var ArrayProto = Array.prototype;
 
 module.exports = function (it) {
   return it !== undefined && (Iterators.Array === it || ArrayProto[ITERATOR] === it);
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/_is-array.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_is-array.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// 7.2.2 IsArray(argument)
+var cof = __webpack_require__(/*! ./_cof */ "./node_modules/core-js/library/modules/_cof.js");
+module.exports = Array.isArray || function isArray(arg) {
+  return cof(arg) == 'Array';
 };
 
 
@@ -5830,6 +6021,39 @@ module.exports = __webpack_require__(/*! ./_core */ "./node_modules/core-js/libr
     || it['@@iterator']
     || Iterators[classof(it)];
 };
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/core.get-iterator.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/core.get-iterator.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var anObject = __webpack_require__(/*! ./_an-object */ "./node_modules/core-js/library/modules/_an-object.js");
+var get = __webpack_require__(/*! ./core.get-iterator-method */ "./node_modules/core-js/library/modules/core.get-iterator-method.js");
+module.exports = __webpack_require__(/*! ./_core */ "./node_modules/core-js/library/modules/_core.js").getIterator = function (it) {
+  var iterFn = get(it);
+  if (typeof iterFn != 'function') throw TypeError(it + ' is not iterable!');
+  return anObject(iterFn.call(it));
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es6.array.is-array.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es6.array.is-array.js ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// 22.1.2.2 / 15.4.3.2 Array.isArray(arg)
+var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
+
+$export($export.S, 'Array', { isArray: __webpack_require__(/*! ./_is-array */ "./node_modules/core-js/library/modules/_is-array.js") });
 
 
 /***/ }),
@@ -23243,7 +23467,7 @@ var Container = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.wi
 
 /***/ }),
 
-/***/ 3:
+/***/ 0:
 /*!**********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fsignup&absolutePagePath=C%3A%5CUsers%5Cengqu%5CDesktop%5Cprojects%5CPersonal%5Csnippet%5Cpages%5Csignup.tsx ***!
   \**********************************************************************************************************************************************************/
@@ -23266,5 +23490,5 @@ module.exports = dll_7aff549c98b978433226;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]));;
+},[[0,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=signup.js.map
