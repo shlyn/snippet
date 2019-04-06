@@ -71,14 +71,14 @@ const GlobalStyle = createGlobalStyle`
   button {
     :hover {
       cursor: pointer;
-    }
+    } 
   }
   input {
     border-radius: 5px;
     border: none;
+    padding: 10px;
     ::placeholder {
       color: ${props => props.theme.gray};
-      padding: 5px;
     }
   }
   h1 {

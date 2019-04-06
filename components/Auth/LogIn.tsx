@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { colors } from "../Styles/colors";
 import { preventDefault } from "../Common/helpers";
@@ -17,19 +17,31 @@ const LOGIN_MUTATION = gql`
 `;
 
 function LogIn() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
   return (
-    <Mutation
-      mutation={LOGIN_MUTATION}
-      variables={{ email: "a", password: "a" }}
-    >
+    <Mutation mutation={LOGIN_MUTATION} variables={{ email, password }}>
       {(login, { error, loading, data }) => {
         console.log(data);
 
         return (
           <Form onSubmit={preventDefault(async () => await login())}>
             <Header>Snippet</Header>
-            <Input placeholder="Username" type="text" name="username" />
-            <Input placeholder="Password" type="password" name="password" />
+            <Input
+              onChange={e => setEmail(e.target.value)}
+              value={email}
+              placeholder="Username"
+              type="text"
+              name="email"
+            />
+            <Input
+              onChange={e => setPassword(e.target.value)}
+              value={password}
+              placeholder="Password"
+              type="password"
+              name="password"
+            />
             <Button type="submit">Log In</Button>
           </Form>
         );
